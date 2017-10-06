@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video player-wrap</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background: mistyrose;
+      font-family: sans-serif;
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .player-wrap {
+      border: 10px double black;
+      width: 900px;
+      height: 500px;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    .player {
+      resize: horizontal;
+      overflow-x: scroll;
+      background: black;
+    }
+
+    .videos {
+      flex: 1;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    .videos__list * {
+      transition: all 0.5s;
+    }
+
+    .videos__list {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      overflow: scroll;
+      height: 100%;
+    }
+
+    .videos__list.small {
+      background: rgba(255, 255, 255, 1);
+    }
+
+    .videos__list.small .title {
+      font-size: 20px;
+    }
+
+    .videos__list.small li {
+      padding: 5px;
+    }
+
+    .videos__list.medium li {
+      padding: 15px;
+    }
+
+    .videos__list.small p,
+    .videos__list.medium p {
+      margin: 0;
+    }
+
+    .videos__list.medium .title {
+      font-size: 25px;
+    }
+
+    .videos__list.medium {
+      background: rgba(255, 255, 255, 0.75);
+    }
+
+    .videos__list.medium {
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .videos__list li {
+      padding: 10px;
+      background: white;
+      display: block;
+      border-bottom: 1px solid grey;
+      position: relative;
+    }
+
+    .timecode {
+      background: black;
+      color: white;
+      border-radius: 10px;
+      padding: 2px 5px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .medium .timecode {
+      top: 30px;
+      font-size: 12px;
+    }
+
+    .medium .desc {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 15px;
+    }
+
+    .small .desc {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 11px;
+    }
+
+    .small .timecode {
+      top: 30px;
+      font-size: 8px;
+    }
+
+    .title {
+      font-size: 30px;
+      margin: 0;
+      font-weight: 500;
+    }
+  </style>
+
+  <div class="player-wrap">
+    <div class="player">
+      <video poster="https://i.ytimg.com/vi/5h_y3svpNiw/hqdefault.jpg"></video>
+    </div>
+    <div class="videos">
+      <ul class="videos__list">
+        <li>
+          <p class="title">Video 001</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">01:21</span>
+        </li>
+        <li>
+          <p class="title">Video 002</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">02:22</span>
+        </li>
+        <li>
+          <p class="title">Video 003</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">03:23</span>
+        </li>
+        <li>
+          <p class="title">Video 004</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">04:24</span>
+        </li>
+        <li>
+          <p class="title">Video 005</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">05:25</span>
+        </li>
+        <li>
+          <p class="title">Video 006</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">06:26</span>
+        </li>
+        <li>
+          <p class="title">Video 007</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">07:27</span>
+        </li>
+        <li>
+          <p class="title">Video 008</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">08:28</span>
+        </li>
+        <li>
+          <p class="title">Video 009</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">09:29</span>
+        </li>
+        <li>
+          <p class="title">Video 010</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">10:210</span>
+        </li>
+        <li>
+          <p class="title">Video 011</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">11:211</span>
+        </li>
+        <li>
+          <p class="title">Video 012</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">12:212</span>
+        </li>
+        <li>
+          <p class="title">Video 013</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">13:213</span>
+        </li>
+        <li>
+          <p class="title">Video 014</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">14:214</span>
+        </li>
+        <li>
+          <p class="title">Video 015</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">15:215</span>
+        </li>
+        <li>
+          <p class="title">Video 016</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">16:216</span>
+        </li>
+        <li>
+          <p class="title">Video 017</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">17:217</span>
+        </li>
+        <li>
+          <p class="title">Video 018</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">18:218</span>
+        </li>
+        <li>
+          <p class="title">Video 019</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">19:219</span>
+        </li>
+        <li>
+          <p class="title">Video 020</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">20:220</span>
+        </li>
+        <li>
+          <p class="title">Video 021</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">21:221</span>
+        </li>
+        <li>
+          <p class="title">Video 022</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">22:222</span>
+        </li>
+        <li>
+          <p class="title">Video 023</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">23:223</span>
+        </li>
+        <li>
+          <p class="title">Video 024</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">24:224</span>
+        </li>
+        <li>
+          <p class="title">Video 025</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">25:225</span>
+        </li>
+        <li>
+          <p class="title">Video 026</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">26:226</span>
+        </li>
+        <li>
+          <p class="title">Video 027</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">27:227</span>
+        </li>
+        <li>
+          <p class="title">Video 028</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">28:228</span>
+        </li>
+        <li>
+          <p class="title">Video 029</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">29:229</span>
+        </li>
+        <li>
+          <p class="title">Video 030</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">30:230</span>
+        </li>
+        <li>
+          <p class="title">Video 031</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">31:231</span>
+        </li>
+        <li>
+          <p class="title">Video 032</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">32:232</span>
+        </li>
+        <li>
+          <p class="title">Video 033</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">33:233</span>
+        </li>
+        <li>
+          <p class="title">Video 034</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">34:234</span>
+        </li>
+        <li>
+          <p class="title">Video 035</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">35:235</span>
+        </li>
+        <li>
+          <p class="title">Video 036</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">36:236</span>
+        </li>
+        <li>
+          <p class="title">Video 037</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">37:237</span>
+        </li>
+        <li>
+          <p class="title">Video 038</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">38:238</span>
+        </li>
+        <li>
+          <p class="title">Video 039</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">39:239</span>
+        </li>
+        <li>
+          <p class="title">Video 040</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">40:240</span>
+        </li>
+        <li>
+          <p class="title">Video 041</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">41:241</span>
+        </li>
+        <li>
+          <p class="title">Video 042</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">42:242</span>
+        </li>
+        <li>
+          <p class="title">Video 043</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">43:243</span>
+        </li>
+        <li>
+          <p class="title">Video 044</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">44:244</span>
+        </li>
+        <li>
+          <p class="title">Video 045</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">45:245</span>
+        </li>
+        <li>
+          <p class="title">Video 046</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">46:246</span>
+        </li>
+        <li>
+          <p class="title">Video 047</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">47:247</span>
+        </li>
+        <li>
+          <p class="title">Video 048</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">48:248</span>
+        </li>
+        <li>
+          <p class="title">Video 049</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">49:249</span>
+        </li>
+        <li>
+          <p class="title">Video 050</p>
+          <p class="desc">This is the video Desc</p>
+          <span class="timecode">50:250</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function callback(entries, observer) {
+      const { width } = entries[0].contentRect;
+      console.log(width);
+      if (width > 400) {
+        size = 'large';
+      } else if (width > 300) {
+        size = 'medium';
+      } else {
+        size = 'small';
+      }
+
+      entries[0].target.classList.remove('small', 'medium', 'large');
+      entries[0].target.classList.add(size);
+    }
+
+    const observer = new ResizeObserver(callback);
+
+    // get some elements to observe
+    const element = document.querySelector('.videos__list');
+    observer.observe(element);
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <video autoplay playsinline class="handsome"></video>
+  <canvas id="paint"></canvas>
+  <button onClick="takePhoto()">📸</button>
+  <div class="strip"></div>
+  <script src="scripts.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #ffc600;
+      margin: 0;
+      text-align: center;
+    }
+
+    video {
+      width: 200px;
+      margin: 20px auto;
+      transform: rotate(10deg);
+      border: 10px solid white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    }
+
+    button {
+      display: block;
+      background: black;
+      font-size: 50px;
+      padding: 10px;
+      color: white;
+      width: 100%;
+      border: 0;
+    }
+
+    #paint {
+      display: none;
+    }
+
+    .strip {
+      width: 100%;
+      width: 100%;
+      display: flex;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .strip img {
+      width: 100px;
+      border: 2px solid white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    }
+
+    .strip a {
+      transition: all 0.3s;
+    }
+
+
+    .strip a:nth-child(2n+1) {
+      transform: rotate(10deg)
+    }
+
+    .strip a:nth-child(2n+2) {
+      transform: rotate(-10deg)
+    }
+  </style>
+</body>
+
+</html>

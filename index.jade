@@ -1,0 +1,394 @@
+doctype html
+html
+  head
+      title What's New in JS by Wes Bos
+      meta(charset='utf-8')
+      script(src='slides.js')
+      link(href='https://fonts.googleapis.com/css?family=Bangers|Open+Sans:400,700' rel='stylesheet' type='text/css')
+      link(href='styles.css'  rel='stylesheet' type='text/css')
+    body
+      section.slides.layout-regular.template-default
+        article.first
+          h1(style="font-size:250px;") What's New<br>In JavaScript?
+          br
+          a(href='http://wesbos.com') wesbos.com
+          a(href='http://twitter.com/wesbos') @wesbos
+
+        article
+          h1(style="font-size:170px;") I&apos;m<br>Wes Bos
+          br
+          img(src="images/canada-flag.png")
+
+        article
+          h2(style="font-size:60px;") These slides will be available shortly after this talk <br>I&apos;ll tweet the link out.
+          img(src='images/Twitter_logo_white.png', width='300' style="margin:100px auto")
+
+          h2
+            a(href='http://twitter.com/wesbos', target='_blank') @wesbos
+
+        article(style='background:white;')
+          a(href='https://ES6.io/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
+            img(src='https://ES6.io/images/es6-facebook-share.png')
+          a(href='https://ES6.io/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') ES6.io
+
+        article(style='background:white;')
+          a(href='https://ReactForBeginners.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
+            img(src='https://reactforbeginners.com/images/facebook-share.png')
+          a(href='https://ReactForBeginners.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') ReactForBeginners.com
+
+        article(style='background:white;')
+          a(href='https://SublimeTextBook.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
+            img(src='images/cover.png')
+          a(href='https://SublimeTextBook.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') SublimeTextBook.com
+
+        article.plain
+          img(src="images/commandline.png")
+          a(href="http://commandlinepoweruser.com") CommandLinePowerUser.com
+
+        article.plain
+          img.high(src="images/flexbox.png")
+          a(href="http://flexbox.io") flexbox.io
+
+        article
+          h1 JavaScript is Always Evolving
+
+        article
+          h1 ES6
+
+        article
+          h1 ES2016 (ES7)
+
+        article
+          h1 ES2017 (ES8)
+
+        article
+          h1.huge New DOM Apis
+
+        article
+          h1 This Talk
+
+        article
+          h1 Reaaaady?
+          p.sub.hl Let's go!
+
+        article.section
+          h1 Promises
+          p.sub Not brand new, but let's do a quick review
+
+        article
+          h2 Promises are an IOU for something that will happen in the future
+
+        article
+          ul.build
+            li AJAX call returning data
+            li Access to a User's webcam
+            li Resizing an image
+
+        article
+          h2 All of these things take time, we simply kick off the process and move along with our lives.
+
+        article
+          h1 But why do we do it this way?
+
+        article
+          h1 JavaScript Waits for no one!
+
+        article
+          h1 Almost Everything Is Asynchronous
+
+        article
+          h2 Let's say we wanted to do a few things:
+          ul.build
+            li Make Coffee
+            li Drink Coffee
+            li Cook Breakfast
+            li Eat Breakfast
+
+        article
+          p Do you need to finish making coffee before you can Start Breakfast?
+          p Would it make sense to wait until coffee is made and consumed before we even start cooking breakfast?
+
+        article
+          p No - we want to start one thing, come back to it once it's finished, and deal with the result accordingly!
+
+        article
+          img.high(src="http://wes.io/mw8s/content")
+
+        article
+          h2 Most new browser APIs are build on Promises, or Observables
+          p More on Observables in a bit
+
+        article
+          h2 Most new browser APIs are build on Promises, or Observables
+          p More on Observables in a bit
+
+        article
+          h2 fetch()
+
+        article
+          img.wide(src="http://wes.io/mvNc/content")
+
+        article
+          h2 Axios
+
+        article
+          img.wide(src="http://wes.io/mvvk/content")
+
+        article
+          h2 Many, many more
+          p.sub.flat PaymentRequest, getUserMedia(), Web Animation API
+
+        article
+          h1 It's easy to make your own too!
+
+        article
+          img.wide(src="http://wes.io/mvlO/content")
+
+        article
+          img.high(src="http://wes.io/mw1Y/content")
+
+
+        article
+          h1 Christmas Tree Callback Hell
+
+        article
+          img.wide(src="http://wes.io/mvjp/content")
+
+        article
+          img.high(src="http://wes.io/mul6/content")
+
+        article
+          h2 we get it<br>Promises are great.
+
+        article.section
+          h1 buuuuuuttt
+
+
+        article.section
+          h1 What's the deal with .then()?
+          p.sub It's still kinda callback-y
+
+        article
+          h2 Any code that needs to come after the promise still needs to be in the final .then() callback :\
+
+        article.section
+          h1 Async + Await
+
+        article.section
+          h2 Async + Await still is promises, but with a really nice syntax
+
+        article
+          img.high(src="http://wes.io/mul6/content")
+
+        article
+          img.high(src="http://wes.io/mv6R/content")
+
+        article
+          h1 Let's break it down
+
+        article
+          h1.big JavaScript is almost entirely asynchronous / non-blocking
+
+        article
+          h1 great! - But it's hard to read/write
+
+        article
+          h1 PHP
+          img.wide(src="http://wes.io/mufS/content")
+
+        article
+          h1 JS
+          img.wide(src="http://wes.io/mw88/content")
+
+        article
+          .build
+            h2 😕😕😕
+            p The PHP is easier to read
+            p The JS is more performant
+            p I'm not really happy
+
+        article
+          h1 Synchronous looking code, without the wait.
+
+        article
+          h1 How does it work?
+
+        article
+          h1 1. Mark it as Async
+
+        article
+          img.wide(src="http://wes.io/mvxm/content")
+
+        article
+          h1 2. await inside your async fn
+
+        article
+          img.wide(src="http://wes.io/mvLf/content")
+
+        article
+         h1 Best of Both Worlds!
+
+        article
+         h1 Another Example
+
+        article
+          h2 Slow...
+          img.wide(src="http://wes.io/mvHv/content")
+
+        article
+          h2 Why wait for Wes?
+          p.sub Remember, async+await is just promises
+
+        article
+          img.wide(src="http://wes.io/mvPr/content", alt="")
+
+        article
+          h1 Error Handling
+          p.sub A few options (which we don't have time for)...
+
+        article.section
+          h1 Done with Async+ Await!
+          p.sub Let's see more new stuff!
+
+        article.section
+          h1 Intersection Observer
+
+        article.section
+          h2 How do you know when an element is on screen?
+
+        article
+          video.high(src="/images/viewport.mp4" loop muted)
+
+        article
+          p With Intersection Observer, you can be alerted when an element is fully or partially scrolled into or out of view.
+
+        article
+          h2 Uses
+          ul.build
+            li Animate elements in on scroll
+            li Play video on scroll in
+            li Lazy Load images only when scrolled
+            li Record views for ads beyond the fold
+            li Use with sticky headers
+
+        article
+          video.high(src="/images/intersection-observer.mp4" loop muted)
+
+        article
+          video.high(src="https://developers.google.com/web/updates/images/2017/09/stickypos/demo.mp4" loop muted)
+          a(href="https://developers.google.com/web/updates/2017/09/sticky-headers") Google Developers
+
+        article
+          h1 Ready for Meta?
+
+        article
+          video(src="https://video.twimg.com/tweet_video/DLZxV-mUIAAijh6.mp4")
+
+        article
+          h1 How does it work?!
+
+        article
+          h2 1. Setup some Options
+          img.wide(src="http://wes.io/muk4/content")
+
+        article
+          h2 2. Create an empty Observer
+          img.wide(src="http://wes.io/mupq/content")
+
+        article
+          h2 3. Give it a callback
+          img.wide(src="http://wes.io/mvSI/content")
+
+        article
+          h2 4. Observe Away!
+          img.wide(src="http://wes.io/mvbJ/content")
+
+        article
+          img.wide(src="http://wes.io/mvMC/content")
+
+        article
+          img.wide(src="http://wes.io/mvMC/content")
+
+        article.section
+          h1 Payment Request API
+
+        article
+          h2 Every single online store needs to reinvent the checkout form.
+
+        article
+          h2 We're all just trying to do the same thing - collect payment info from the user.
+
+        article
+          h2 The Payment Request is a standardized browser API to collect billing and shipping information from your users.
+
+        article
+          video.high(style="width: auto; height: 100%; min-width: 0;" src="/images/paymentRequest.mp4" controls loop)
+
+        article
+          img.high(src="https://developers.google.com/web/fundamentals/payments/images/state01-receipt-view.png")
+          a(href="https://developers.google.com/web/fundamentals/payments/") [Google Developers]
+
+        article
+          video.high(style="width: auto; height: 100%; min-width: 0;" src="https://developers.google.com/web/fundamentals/payments/videos/basic-intro.webm" controls loop)
+
+        article
+          video.high(style="width: auto; height: 100%; min-width: 0;" src="/images/applepay.mp4" controls loop)
+
+        article
+          h2 So, Does the Browser Charge Your Card?
+
+        article.section
+          h1 getUserMedia()
+
+        article
+          h2 Not new at all
+
+        article
+          img.high(src="http://wes.io/mw55/content")
+
+        article
+          h1 BUT
+          p.sub Safari Doesn't give a shit
+
+        article
+          h1 September 2017 / iOS11
+          p.sub playsinline and getUserMedia()
+
+        article
+          video.high(style="width: auto; height: 100%; min-width: 0;" src="/images/gum.mp4" controls loop)
+
+        article
+          h2 Promise Based!
+          img.wide(src="http://wes.io/mv93/content")
+
+        article
+          img.high(src="http://wes.io/musk/content")
+
+        article.section
+          h1 Resize Observer
+          p per-element resize events!
+
+        article
+          img.high(src="http://wes.io/mvNd/content")
+
+        article
+          video.high(style="width: auto; height: 100%; min-width: 0;" src="/images/resizeObserver.mp4" controls loop)
+
+        article.section
+          h1 Gateway Drug to Element Queries!
+
+        article
+          img.high(src="http://wes.io/mvjO/content")
+
+        article
+          video.high(style="width: auto; height: 100%; min-width: 0;" src="/images/resize-video-player.mp4" controls loop)
+
+        article.section
+          h1 WOWOWOWOWOW!
+          p.sub Some cool stuff!
+
+        article
+          h1.big Thanks<br>Folks!
+          a(href="http://twitter.com/wesbos") @wesbos
+          a(href="http://wesbos.com") WesBos.com
+      script(src='scripts.js')

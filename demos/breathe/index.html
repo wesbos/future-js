@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function sleep(amount) {
+      return new Promise((resolve, reject) => {
+        if (amount <= 300) {
+          return reject('That is too fast, cool it down!');
+        }
+        setTimeout(() => resolve(`Slept for ${amount}`), amount)
+      });
+    }
+
+    async function go() {
+      // just wait
+      await sleep(1000);
+      // or capture the returned value
+      const response = await sleep(750);
+      console.log(response);
+    }
+
+
+
+
+    sleep(500)
+      .then((result) => {
+        console.log(result)
+        return sleep(1000);
+      })
+      .then((result) => {
+        console.log(result)
+        return sleep(750);
+      })
+      .then((result) => {
+        console.log(result)
+        console.log('Done!');
+      })
+  </script>
+</body>
+
+</html>

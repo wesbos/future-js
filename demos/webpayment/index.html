@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Payments!</title>
+</head>
+<body>
+
+  <button onClick="takeMyMoney()">Take My Money!</button>
+
+  <script>
+    const supportedPaymentMethods = [{ supportedMethods: ['basic-card'] }];
+    const paymentDetails = { total: { label: 'Total', amount: { currency: 'USD', value: 100 } } };
+    const request = new PaymentRequest(supportedPaymentMethods, paymentDetails);
+
+    async function takeMyMoney() {
+      // show the payment Popup and wait until they fill it out
+      const paymentResponse = await request.show();
+      // Complete the payment
+      await paymentResponse.complete();
+      // now send this data to Stripe / Your Payment Provider
+      console.log(paymentResponse.details); // CC #, name, security Code, Expiry, etc...
+    }
+  </script>
+</body>
+</html>
