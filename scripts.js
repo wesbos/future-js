@@ -1,9 +1,12 @@
+if (navigator.userAgent.includes('Firefox')) {
+  document.body.classList.add('firefox');
+}
+
 const options = {
   threshold: [0, 1.0],
 };
 
 const callback = entries => {
-  // Entries are elements that are within view
   entries.forEach(entry => {
     if (entry.isIntersecting && entry.target.parentElement.classList.contains('current')) {
       entry.target.play();
@@ -15,7 +18,7 @@ const callback = entries => {
 
 const observer = new IntersectionObserver(callback, options);
 
-// get some elements to observe
+// get a list of all videos on the page
 const videos = document.querySelectorAll('video');
 // Observe each of those elements
 videos.forEach(video => observer.observe(video));
