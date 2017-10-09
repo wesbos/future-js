@@ -11,13 +11,15 @@ html
         article.first
           h1(style="font-size:250px;") What's New<br>In JavaScript?
           br
+          p
+          p
           a(href='http://wesbos.com') wesbos.com
           a(href='http://twitter.com/wesbos') @wesbos
 
         article
-          h1(style="font-size:170px;") I&apos;m<br>Wes Bos
-          br
-          img(src="images/canada-flag.png")
+          h1 I&apos;m<br>Wes Bos
+          p: br
+          p: img(src="images/canada-flag.png")
 
         article
           h2(style="font-size:60px;") These slides will be available shortly after this talk <br>I&apos;ll tweet the link out.
@@ -28,18 +30,18 @@ html
 
         article(style='background:white;')
           a(href='https://ES6.io/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
-            img(src='https://ES6.io/images/es6-facebook-share.png')
+            img.wide(src='https://ES6.io/images/es6-facebook-share.png')
           a(href='https://ES6.io/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') ES6.io
 
 
         article(style='background:white;')
           a(href='https://ReactForBeginners.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
-            img(src='https://reactforbeginners.com/images/facebook-share.png')
+            img.wide(src='https://reactforbeginners.com/images/facebook-share.png')
           a(href='https://ReactForBeginners.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') ReactForBeginners.com
 
         article(style='background:white;')
           a(href='https://LearnNode.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
-            img(src='https://learnnode.com/images/NODE/node-facebook-share.jpg')
+            img.wide(src='https://learnnode.com/images/NODE/node-facebook-share.jpg')
           a(href='https://LearnNode.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') LearnNode.com
 
         article
@@ -111,8 +113,8 @@ html
           img.high(src="./images/screenshots/mw8s.png")
 
         article
-          h2 Most new browser APIs are build on Promises, or Observables
-          p More on Observables in a bit
+          h2 Most new browser APIs are built on Promises, or Observables
+          p.sub More on Observables in a bit
 
         article
           h2 fetch()
@@ -298,9 +300,6 @@ html
         article
           img.wide(src="./images/screenshots/mvMC.png")
 
-        article
-          img.wide(src="./images/screenshots/mvMC.png")
-
         article.section
           h1 Payment Request API
 
@@ -328,6 +327,11 @@ html
 
         article
           h2 So, Does the Browser Charge Your Card?
+          p.sub nope!
+
+        article
+          h2 Is it secure?
+          p.sub The same, or more!
 
         article.section
           h1 getUserMedia()
@@ -358,13 +362,13 @@ html
 
         article.section
           h1 Resize Observer
-          p per-element resize events!
-
-        article
-          img.high(src="./images/screenshots/mvNd.png")
+          p.sub per-element resize events!
 
         article
           video.high(style="width: auto; height: 100%; min-width: 0;" src="./images/resizeObserver.mp4" controls loop)
+        article
+          img.high(src="./images/screenshots/mvNd.png")
+
 
         article.section
           h1 Gateway Drug to Element Queries!
@@ -378,6 +382,32 @@ html
         article.section
           h1 WOWOWOWOWOW!
           p.sub Some cool stuff!
+
+        article.section
+          h1 What About Support?
+
+        article.section
+          h1 <strong>Async + Await</strong> via Babel
+
+        article.section
+          h1 <strong>Resize Observer</strong> Polyfillable, but expensive.
+
+        article.section
+          h1 <strong>Intersection Observer</strong> has an official W3 polyfill
+
+        article.section
+          h1 <strong>Web Payment</strong> is easily polyfillable
+          p.sub or Fallback to checkout form
+
+        article.section
+          h1 <strong>getUserMedia</strong> is everywhere
+
+        article
+          p text
+          p(style="font-size:200px;") (504) 229-6828
+          p
+          p.hl(style="font-size:300px;") #newjs 5 Best talk!
+          p — or — #newjs 1 garbage fire
 
         article
           h1.big Thanks<br>Folks!
