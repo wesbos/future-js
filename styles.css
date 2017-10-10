@@ -25,9 +25,9 @@ background
   position: absolute;
   overflow: hidden;
   width: 1920px;
-  height: 1440px;
+  height: 1107px;
   margin-left: -960px;
-  margin-top: -720px;
+  margin-top: -553.5px;
   left: 50%;
   top: 50%;
   border-radius: 5px;
@@ -579,14 +579,14 @@ html {
   top: 0;
   left: 0;
   opacity: 0.8;
-  background-image: linear-gradient(189deg, #2e0067 0%, #400090 100%);
+  background-image: linear-gradient(95deg, #2e0067 0%, #400090 100%);
 }
 .slides > article.plain:before,
 .slides > article.plain:after {
   display: none;
 }
 .slides > article.section:after {
-  background-image: linear-gradient(137deg, #fd0 0%, #ffe01a 100%);
+  background-image: linear-gradient(158deg, #fd0 0%, #ffe01a 100%);
 }
 .slides > article.section h1,
 .slides > article.section h2,
@@ -608,160 +608,160 @@ html {
   opacity: 0.1;
 }
 .slides > article:nth-child(39n+1):before {
-  background-image: url("images/20.jpg");
-  content: #14e839;
+  background-image: url("images/13.jpg");
+  content: #ff00e0;
 }
 .slides > article:nth-child(39n+2):before {
-  background-image: url("images/1.jpg");
-  content: #e1e34a;
+  background-image: url("images/8.jpg");
+  content: #5e9ccd;
 }
 .slides > article:nth-child(39n+3):before {
-  background-image: url("images/18.jpg");
-  content: #1e4823;
+  background-image: url("images/6.jpg");
+  content: #006c8d;
 }
 .slides > article:nth-child(39n+4):before {
-  background-image: url("images/23.jpg");
-  content: #eb821b;
+  background-image: url("images/31.jpg");
+  content: #7d5794;
 }
 .slides > article:nth-child(39n+5):before {
+  background-image: url("images/27.jpg");
+  content: #94eced;
+}
+.slides > article:nth-child(39n+6):before {
   background-image: url("images/20.jpg");
   content: #7d5794;
 }
-.slides > article:nth-child(39n+6):before {
-  background-image: url("images/26.jpg");
-  content: #94eced;
-}
 .slides > article:nth-child(39n+7):before {
-  background-image: url("images/20.jpg");
-  content: #e1e34a;
+  background-image: url("images/26.jpg");
+  content: #ff00e0;
 }
 .slides > article:nth-child(39n+8):before {
-  background-image: url("images/10.jpg");
-  content: #eb821b;
+  background-image: url("images/3.jpg");
+  content: #94eced;
 }
 .slides > article:nth-child(39n+9):before {
-  background-image: url("images/26.jpg");
+  background-image: url("images/30.jpg");
   content: #7d5794;
 }
 .slides > article:nth-child(39n+10):before {
-  background-image: url("images/23.jpg");
-  content: #17156b;
+  background-image: url("images/29.jpg");
+  content: #eb821b;
 }
 .slides > article:nth-child(39n+11):before {
-  background-image: url("images/5.jpg");
-  content: #ff00e0;
+  background-image: url("images/4.jpg");
+  content: #14e839;
 }
 .slides > article:nth-child(39n+12):before {
-  background-image: url("images/31.jpg");
-  content: #3768f7;
+  background-image: url("images/2.jpg");
+  content: #e1e34a;
 }
 .slides > article:nth-child(39n+13):before {
-  background-image: url("images/1.jpg");
-  content: #17156b;
+  background-image: url("images/18.jpg");
+  content: #e1e34a;
 }
 .slides > article:nth-child(39n+14):before {
-  background-image: url("images/9.jpg");
-  content: #52aeea;
+  background-image: url("images/26.jpg");
+  content: #ae5ceb;
 }
 .slides > article:nth-child(39n+15):before {
   background-image: url("images/9.jpg");
-  content: #eb821b;
-}
-.slides > article:nth-child(39n+16):before {
-  background-image: url("images/3.jpg");
-  content: #eb821b;
-}
-.slides > article:nth-child(39n+17):before {
-  background-image: url("images/16.jpg");
-  content: #14e839;
-}
-.slides > article:nth-child(39n+18):before {
-  background-image: url("images/19.jpg");
-  content: #52aeea;
-}
-.slides > article:nth-child(39n+19):before {
-  background-image: url("images/25.jpg");
-  content: #17156b;
-}
-.slides > article:nth-child(39n+20):before {
-  background-image: url("images/27.jpg");
-  content: #e1e34a;
-}
-.slides > article:nth-child(39n+21):before {
-  background-image: url("images/31.jpg");
-  content: #52aeea;
-}
-.slides > article:nth-child(39n+22):before {
-  background-image: url("images/12.jpg");
-  content: #eb821b;
-}
-.slides > article:nth-child(39n+23):before {
-  background-image: url("images/20.jpg");
-  content: #ff00e0;
-}
-.slides > article:nth-child(39n+24):before {
-  background-image: url("images/12.jpg");
   content: #1e4823;
 }
-.slides > article:nth-child(39n+25):before {
-  background-image: url("images/25.jpg");
-  content: #5e9ccd;
-}
-.slides > article:nth-child(39n+26):before {
-  background-image: url("images/28.jpg");
+.slides > article:nth-child(39n+16):before {
+  background-image: url("images/12.jpg");
   content: #006c8d;
 }
-.slides > article:nth-child(39n+27):before {
-  background-image: url("images/31.jpg");
+.slides > article:nth-child(39n+17):before {
+  background-image: url("images/21.jpg");
+  content: #e1e34a;
+}
+.slides > article:nth-child(39n+18):before {
+  background-image: url("images/28.jpg");
   content: #17156b;
 }
-.slides > article:nth-child(39n+28):before {
+.slides > article:nth-child(39n+19):before {
+  background-image: url("images/3.jpg");
+  content: #1e4823;
+}
+.slides > article:nth-child(39n+20):before {
   background-image: url("images/15.jpg");
   content: #94eced;
 }
-.slides > article:nth-child(39n+29):before {
-  background-image: url("images/25.jpg");
-  content: #eb821b;
-}
-.slides > article:nth-child(39n+30):before {
-  background-image: url("images/29.jpg");
-  content: #14e839;
-}
-.slides > article:nth-child(39n+31):before {
-  background-image: url("images/18.jpg");
-  content: #ae5ceb;
-}
-.slides > article:nth-child(39n+32):before {
-  background-image: url("images/6.jpg");
-  content: #ae5ceb;
-}
-.slides > article:nth-child(39n+33):before {
-  background-image: url("images/8.jpg");
-  content: #eb821b;
-}
-.slides > article:nth-child(39n+34):before {
-  background-image: url("images/27.jpg");
-  content: #1e4823;
-}
-.slides > article:nth-child(39n+35):before {
-  background-image: url("images/1.jpg");
-  content: #3768f7;
-}
-.slides > article:nth-child(39n+36):before {
-  background-image: url("images/21.jpg");
+.slides > article:nth-child(39n+21):before {
+  background-image: url("images/13.jpg");
   content: #52aeea;
 }
-.slides > article:nth-child(39n+37):before {
-  background-image: url("images/8.jpg");
-  content: #eb821b;
+.slides > article:nth-child(39n+22):before {
+  background-image: url("images/19.jpg");
+  content: #006c8d;
 }
-.slides > article:nth-child(39n+38):before {
+.slides > article:nth-child(39n+23):before {
+  background-image: url("images/8.jpg");
+  content: #14e839;
+}
+.slides > article:nth-child(39n+24):before {
+  background-image: url("images/30.jpg");
+  content: #ae5ceb;
+}
+.slides > article:nth-child(39n+25):before {
+  background-image: url("images/7.jpg");
+  content: #3768f7;
+}
+.slides > article:nth-child(39n+26):before {
+  background-image: url("images/18.jpg");
+  content: #006c8d;
+}
+.slides > article:nth-child(39n+27):before {
+  background-image: url("images/28.jpg");
+  content: #ff00e0;
+}
+.slides > article:nth-child(39n+28):before {
+  background-image: url("images/12.jpg");
+  content: #ff00e0;
+}
+.slides > article:nth-child(39n+29):before {
   background-image: url("images/5.jpg");
   content: #52aeea;
 }
-.slides > article:nth-child(39n+39):before {
-  background-image: url("images/2.jpg");
+.slides > article:nth-child(39n+30):before {
+  background-image: url("images/14.jpg");
+  content: #eb821b;
+}
+.slides > article:nth-child(39n+31):before {
+  background-image: url("images/5.jpg");
   content: #1e4823;
+}
+.slides > article:nth-child(39n+32):before {
+  background-image: url("images/25.jpg");
+  content: #e1e34a;
+}
+.slides > article:nth-child(39n+33):before {
+  background-image: url("images/3.jpg");
+  content: #ae5ceb;
+}
+.slides > article:nth-child(39n+34):before {
+  background-image: url("images/23.jpg");
+  content: #5e9ccd;
+}
+.slides > article:nth-child(39n+35):before {
+  background-image: url("images/20.jpg");
+  content: #94eced;
+}
+.slides > article:nth-child(39n+36):before {
+  background-image: url("images/30.jpg");
+  content: #17156b;
+}
+.slides > article:nth-child(39n+37):before {
+  background-image: url("images/29.jpg");
+  content: #5e9ccd;
+}
+.slides > article:nth-child(39n+38):before {
+  background-image: url("images/17.jpg");
+  content: #3768f7;
+}
+.slides > article:nth-child(39n+39):before {
+  background-image: url("images/27.jpg");
+  content: #17156b;
 }
 h1,
 h2,
