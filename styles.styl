@@ -7,9 +7,13 @@ orange = #FF9D00
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body
+  overflow hidden
 
 // Mixin
 random(min,max)
@@ -26,7 +30,7 @@ purple = #2E0067
     width 100%
     height 100%
     position absolute
-    filter grayscale(100%) contrast(160%)
+    // filter grayscale(100%) contrast(160%)
     background:url(images/3.jpg); // blacksmith
     background-size cover
     top 0
@@ -94,6 +98,7 @@ h1,h2,h3,h4,h5,h6
   line-height auto
   text-shadow 10px 10px 0 alpha(white, 0.01)
   margin -50px 0 15px 0
+  will-change: filter;
 
 .firefox
   h1,h2,h3,h4,h5,h6

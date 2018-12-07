@@ -25,9 +25,9 @@ background
   position: absolute;
   overflow: hidden;
   width: 1920px;
-  height: 1107px;
+  height: 1130px;
   margin-left: -960px;
-  margin-top: -553.5px;
+  margin-top: -565px;
   left: 50%;
   top: 50%;
   border-radius: 5px;
@@ -552,6 +552,9 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
+body {
+  overflow: hidden;
+}
 .slides > article {
   padding: 50px;
 }
@@ -561,8 +564,6 @@ html {
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-filter: grayscale(100%) contrast(160%);
-          filter: grayscale(100%) contrast(160%);
   background: url("images/3.jpg");
   background-size: cover;
   top: 0;
@@ -579,14 +580,14 @@ html {
   top: 0;
   left: 0;
   opacity: 0.8;
-  background-image: linear-gradient(154deg, #2e0067 0%, #400090 100%);
+  background-image: linear-gradient(325deg, #2e0067 0%, #400090 100%);
 }
 .slides > article.plain:before,
 .slides > article.plain:after {
   display: none;
 }
 .slides > article.section:after {
-  background-image: linear-gradient(176deg, #fd0 0%, #ffe01a 100%);
+  background-image: linear-gradient(248deg, #fd0 0%, #ffe01a 100%);
 }
 .slides > article.section h1,
 .slides > article.section h2,
@@ -608,121 +609,121 @@ html {
   opacity: 0.1;
 }
 .slides > article:nth-child(39n+1):before {
-  background-image: url("images/22.jpg");
-}
-.slides > article:nth-child(39n+2):before {
-  background-image: url("images/14.jpg");
-}
-.slides > article:nth-child(39n+3):before {
-  background-image: url("images/2.jpg");
-}
-.slides > article:nth-child(39n+4):before {
-  background-image: url("images/30.jpg");
-}
-.slides > article:nth-child(39n+5):before {
-  background-image: url("images/11.jpg");
-}
-.slides > article:nth-child(39n+6):before {
-  background-image: url("images/18.jpg");
-}
-.slides > article:nth-child(39n+7):before {
-  background-image: url("images/27.jpg");
-}
-.slides > article:nth-child(39n+8):before {
-  background-image: url("images/8.jpg");
-}
-.slides > article:nth-child(39n+9):before {
-  background-image: url("images/10.jpg");
-}
-.slides > article:nth-child(39n+10):before {
-  background-image: url("images/5.jpg");
-}
-.slides > article:nth-child(39n+11):before {
-  background-image: url("images/4.jpg");
-}
-.slides > article:nth-child(39n+12):before {
-  background-image: url("images/11.jpg");
-}
-.slides > article:nth-child(39n+13):before {
-  background-image: url("images/30.jpg");
-}
-.slides > article:nth-child(39n+14):before {
-  background-image: url("images/7.jpg");
-}
-.slides > article:nth-child(39n+15):before {
   background-image: url("images/24.jpg");
 }
-.slides > article:nth-child(39n+16):before {
-  background-image: url("images/27.jpg");
-}
-.slides > article:nth-child(39n+17):before {
-  background-image: url("images/20.jpg");
-}
-.slides > article:nth-child(39n+18):before {
-  background-image: url("images/4.jpg");
-}
-.slides > article:nth-child(39n+19):before {
-  background-image: url("images/17.jpg");
-}
-.slides > article:nth-child(39n+20):before {
-  background-image: url("images/23.jpg");
-}
-.slides > article:nth-child(39n+21):before {
-  background-image: url("images/16.jpg");
-}
-.slides > article:nth-child(39n+22):before {
-  background-image: url("images/14.jpg");
-}
-.slides > article:nth-child(39n+23):before {
-  background-image: url("images/14.jpg");
-}
-.slides > article:nth-child(39n+24):before {
-  background-image: url("images/10.jpg");
-}
-.slides > article:nth-child(39n+25):before {
-  background-image: url("images/8.jpg");
-}
-.slides > article:nth-child(39n+26):before {
-  background-image: url("images/25.jpg");
-}
-.slides > article:nth-child(39n+27):before {
-  background-image: url("images/21.jpg");
-}
-.slides > article:nth-child(39n+28):before {
-  background-image: url("images/12.jpg");
-}
-.slides > article:nth-child(39n+29):before {
-  background-image: url("images/7.jpg");
-}
-.slides > article:nth-child(39n+30):before {
-  background-image: url("images/3.jpg");
-}
-.slides > article:nth-child(39n+31):before {
-  background-image: url("images/25.jpg");
-}
-.slides > article:nth-child(39n+32):before {
-  background-image: url("images/19.jpg");
-}
-.slides > article:nth-child(39n+33):before {
-  background-image: url("images/15.jpg");
-}
-.slides > article:nth-child(39n+34):before {
-  background-image: url("images/18.jpg");
-}
-.slides > article:nth-child(39n+35):before {
-  background-image: url("images/25.jpg");
-}
-.slides > article:nth-child(39n+36):before {
-  background-image: url("images/10.jpg");
-}
-.slides > article:nth-child(39n+37):before {
+.slides > article:nth-child(39n+2):before {
   background-image: url("images/28.jpg");
 }
+.slides > article:nth-child(39n+3):before {
+  background-image: url("images/30.jpg");
+}
+.slides > article:nth-child(39n+4):before {
+  background-image: url("images/5.jpg");
+}
+.slides > article:nth-child(39n+5):before {
+  background-image: url("images/24.jpg");
+}
+.slides > article:nth-child(39n+6):before {
+  background-image: url("images/3.jpg");
+}
+.slides > article:nth-child(39n+7):before {
+  background-image: url("images/20.jpg");
+}
+.slides > article:nth-child(39n+8):before {
+  background-image: url("images/15.jpg");
+}
+.slides > article:nth-child(39n+9):before {
+  background-image: url("images/8.jpg");
+}
+.slides > article:nth-child(39n+10):before {
+  background-image: url("images/26.jpg");
+}
+.slides > article:nth-child(39n+11):before {
+  background-image: url("images/6.jpg");
+}
+.slides > article:nth-child(39n+12):before {
+  background-image: url("images/23.jpg");
+}
+.slides > article:nth-child(39n+13):before {
+  background-image: url("images/3.jpg");
+}
+.slides > article:nth-child(39n+14):before {
+  background-image: url("images/23.jpg");
+}
+.slides > article:nth-child(39n+15):before {
+  background-image: url("images/23.jpg");
+}
+.slides > article:nth-child(39n+16):before {
+  background-image: url("images/11.jpg");
+}
+.slides > article:nth-child(39n+17):before {
+  background-image: url("images/10.jpg");
+}
+.slides > article:nth-child(39n+18):before {
+  background-image: url("images/8.jpg");
+}
+.slides > article:nth-child(39n+19):before {
+  background-image: url("images/27.jpg");
+}
+.slides > article:nth-child(39n+20):before {
+  background-image: url("images/24.jpg");
+}
+.slides > article:nth-child(39n+21):before {
+  background-image: url("images/24.jpg");
+}
+.slides > article:nth-child(39n+22):before {
+  background-image: url("images/25.jpg");
+}
+.slides > article:nth-child(39n+23):before {
+  background-image: url("images/18.jpg");
+}
+.slides > article:nth-child(39n+24):before {
+  background-image: url("images/25.jpg");
+}
+.slides > article:nth-child(39n+25):before {
+  background-image: url("images/9.jpg");
+}
+.slides > article:nth-child(39n+26):before {
+  background-image: url("images/22.jpg");
+}
+.slides > article:nth-child(39n+27):before {
+  background-image: url("images/9.jpg");
+}
+.slides > article:nth-child(39n+28):before {
+  background-image: url("images/3.jpg");
+}
+.slides > article:nth-child(39n+29):before {
+  background-image: url("images/27.jpg");
+}
+.slides > article:nth-child(39n+30):before {
+  background-image: url("images/23.jpg");
+}
+.slides > article:nth-child(39n+31):before {
+  background-image: url("images/3.jpg");
+}
+.slides > article:nth-child(39n+32):before {
+  background-image: url("images/23.jpg");
+}
+.slides > article:nth-child(39n+33):before {
+  background-image: url("images/26.jpg");
+}
+.slides > article:nth-child(39n+34):before {
+  background-image: url("images/8.jpg");
+}
+.slides > article:nth-child(39n+35):before {
+  background-image: url("images/24.jpg");
+}
+.slides > article:nth-child(39n+36):before {
+  background-image: url("images/3.jpg");
+}
+.slides > article:nth-child(39n+37):before {
+  background-image: url("images/3.jpg");
+}
 .slides > article:nth-child(39n+38):before {
-  background-image: url("images/19.jpg");
+  background-image: url("images/25.jpg");
 }
 .slides > article:nth-child(39n+39):before {
-  background-image: url("images/29.jpg");
+  background-image: url("images/22.jpg");
 }
 h1,
 h2,
@@ -738,6 +739,7 @@ h6 {
   line-height: auto;
   text-shadow: 10px 10px 0 rgba(255,255,255,0.01);
   margin: -50px 0 15px 0;
+  will-change: filter;
 }
 .firefox h1,
 .firefox h2,
